@@ -44,7 +44,7 @@ make builds the project and makes flash programs for the board. Artifacts like .
 -
 
 Pin Map (if needed):
-
+<pre>
 Port.Bit  Arduino  Dir  Function                     Notes
 PC1       A1       I/O  DS18B20 DQ                   4.7k pull up to 5V (One Wire)
 PB5       D13      In   HI/LO button                 internal pull up, pin change ISR
@@ -59,6 +59,8 @@ PB3       D11      Out  Servo PWM                    Timer2 OC2A, ~16.4 ms perio
 PC2       A2       Out  RGB LED Blue                 common anode, 240 ohm series resistor
 PC3       A3       Out  RGB LED Green                PWM via Timer1 ISRs, 1.5k series resistor
 PC4       A4       Out  RGB LED Red                  240 ohm series resistor
+
+</pre>
 
 Power and ground
 Use one common ground for Arduino, breadboard rails, DS18B20, RGB LED, servo, and 74HCT125
